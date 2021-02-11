@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="icon" href="favicon.ico/32.ico">
   </head>
   <body>
     <header>
       <nav>
         <a href="index.html">
-          <img src="https://via.placeholder.com/180x80" alt="Логотип нердс">
+          <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип нердс">
         </a>
         <ul>
           <li><a href="blank.html">Студия</a></li>
@@ -16,32 +17,30 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="blank.html">Контакты</a></li>
         </ul>
-        <a href="blank.html">Корзина</a>
+        <a href="blank.html"><img src="img/cart-icon.png" alt=""> Корзина</a>
       </nav>
     </header>
     <main>
       <section>
         <h2>Фильтр выборки товара</h2>
         <form action="">
-        <fieldset>
-          <legend>Стоимость</legend>
-            <ul>
-              <li>
-                <input type="radio" name="product-group" value="adaptive" id="filter-adaptive">
-                <label for="filter-adaptive">Адаптивная</label>
-              </li>
-              <li>
-                <input type="radio" name="product-group" value="fixed" id="filter-fixed" checked>
-                <label for="filter-fixed">Фиксированная</label>
-              </li>
-              <li>
-                <input type="radio" name="product-group" value="name" id="filter-name">
-                <label for="filter-name">Резиновая</label>
-              </li>
-            </ul>
+          <fieldset>
+            <legend>Стоимость</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="product-group" value="adaptive" id="filter-adaptive">
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="product-group" value="fixed" id="filter-fixed" checked>
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="product-group" value="name" id="filter-name">
+                  <label for="filter-name">Резиновая</label>
+                </li>
+              </ul>
           </fieldset>
-        </form>
-        <form action="">
           <fieldset>
             <legend>Особенности:</legend>
             <ul>
@@ -67,22 +66,19 @@
               </li>
             </ul>
           </fieldset>
-        <button type="submit">Показать</button>
-      </form>
+          <button type="submit">Показать</button>
+        </form>
     </section>
     <section>
       <h2>Сортировка</h2>
         <ul>
           <li>
-            <input type="radio" name="sorting-group" value="price" id="filter-price">
             <a for="filter-price">по цене</a>
           </li>
           <li>
-            <input type="radio" name="sorting-group" value="type" id="filter-type" checked>
             <a for="filter-type">по типу</a>
           </li>
           <li>
-            <input type="radio" name="sorting-group" value="rubber" id="filter-rubber">
             <a for="filter-name">по названию</a>
           </li>
         </ul>
@@ -90,7 +86,7 @@
     <section>
       <h2>Карточки товаров</h2>
         <article>
-          <img src="https://via.placeholder.com/358x578" width="359" height="578" alt="Sedona">
+          <img src="img/Mask Group-5.png" width="359" height="578" alt="Sedona">
           <div>
             <h3>
               <a href="blank.html">Sedona</a>
@@ -103,7 +99,7 @@
           </div>
         </article>
         <article>
-          <img src="https://via.placeholder.com/358x578" width="359" height="578" alt="Pink App">
+          <img src="img/Mask Group.png" width="359" height="578" alt="Pink App">
           <div>
             <h3>
               <a href="blank.html">Pink App</a>
@@ -115,7 +111,7 @@
           </div>
         </article>
         <article>
-          <img src="https://via.placeholder.com/358x578" width="359" height="578" alt="Barbershop">
+          <img src="img/Mask Group-3.png" width="359" height="578" alt="Barbershop">
           <div>
             <h3>
               <a href="blank.html">Barbershop</a>
@@ -127,7 +123,7 @@
           </div>
         </article>
         <article>
-          <img src="https://via.placeholder.com/358x578" width="359" height="578" alt="Mishka">
+          <img src="img/Mask Group-1.png" width="359" height="578" alt="Mishka">
           <div>
             <h3>
               <a href="blank.html">Mishka</a>
@@ -139,7 +135,7 @@
           </div>
         </article>
         <article>
-          <img src="https://via.placeholder.com/358x578" width="359" height="578" alt="A plus">
+          <img src="img/Mask Group-4.png" width="359" height="578" alt="A plus">
           <div>
             <h3>
               <a href="blank.html">A Plus</a>
@@ -151,7 +147,7 @@
           </div>
         </article>
         <article>
-          <img src="https://via.placeholder.com/358x578" width="359" height="578" alt="Kvas">
+          <img src="img/Mask Group-2.png" width="359" height="578" alt="Kvas">
           <div>
             <h3>
               <a href="blank.html">КВАС</a>
@@ -162,7 +158,6 @@
             <a href="blank.html">9 900 ₽</a>
           </div>
         </article>
-      <h2>Выборка страницы работ</h2>
       <ul>
         <li><a href="blank.html">1</a></li>
         <li><a href="blank.html">2</a></li>
@@ -176,12 +171,15 @@
         <h2>Сопособы связи с нами</h2>
         <ul>
           <li>
+            <img src="img/vk-icon.png" alt="Вконтакте">
             <a href="blank.html">ВКонтакте</a>
           </li>
           <li>
+            <img src="img/fb-icon.png" alt="фейсбук">
             <a href="blank.html">Фейсбук</a>
           </li>
           <li>
+            <img src="img/insta-icon.png" alt="инстаграм">
             <a href="blank.html">Инстаграм</a>
           </li>
         </ul>
