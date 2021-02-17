@@ -1,0 +1,23 @@
+:root{
+    --clrhd: #EEEEEE;
+    --clrfnt: #000000;
+    --clrtxt: #283136;
+    --clrbtn: #FFFFFF;
+    --txtfnt: 'Roboto', sans-serif;
+}
+body{
+    font-family: var(--txtfnt);
+    font-style: normal;
+    font-weight: 500;
+}
+header{
+    background-color: var(--clrhd);
+}
+h3{
+    font-size: 24px;
+    line-height: 30px; 
+}
+p{
+    font-size: 16px;
+    line-height: 24px;
+}

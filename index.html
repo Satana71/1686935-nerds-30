@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <header>
@@ -11,11 +14,11 @@
         <a href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип нердс">
         </a>
-        <ul>
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+        <ul class="list">
+          <li class="item_pagination"><a href="blank.html">Студия</a></li>
+          <li class="item_pagination"><a href="blank.html">Клиенты</a></li>
+          <li class="item_pagination"><a href="catalog.html">Магазин</a></li>
+          <li class="item_pagination"><a href="blank.html">Контакты</a></li>
         </ul>
         <a href="blank.html">Корзина</a>
       </nav>
@@ -46,19 +49,18 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="article">
         <h2>Визитная карточка студии</h2>
-        <p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3>Выполняем заказы на разработку:</h3>
-        <p>Веб-сайтов любой сложности</p>
-        <p>Мобильных приложения для iOS и Android</p>
-        <p>Слайдшоу и видео для корпоративных презентаций</p>
+        <p class="article_slogan">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="article_content">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h3 class="article_meta">Выполняем заказы на разработку:</h3>
+        <p class="article_desc">Веб-сайтов любой сложности</p>
+        <p class="article_desc">Мобильных приложения для iOS и Android</p>
+        <p class="article_desc">Слайдшоу и видео для корпоративных презентаций</p>
         <div>
           <img src="img/picknerds.png" width="360" height="208" alt="Логотип нердс">
           <p>C 2004 года любим точность во всем:</p>
-          <ul>
-            
+          <ul class="featurse">
             <li>
               146%
               <p>Уровень самоотдачи</p>
@@ -76,7 +78,7 @@
       </section>
       <section>
         <h2>Логотипы фирм заказавших наши услуги</h2>
-        <ul>
+        <ul class="logo_list">
           <li>
             <img src="img/logohtml.svg" width="199" height="68" alt="Логотип академии">
           </li>
@@ -99,7 +101,7 @@
     <footer>
       <section>
         <h2>Сопособы связи с нами</h2>
-        <ul>
+        <ul class="social">
           <li>
             <img src="img/vk-icon.svg" alt="Вконтакте">
             <a href="blank.html">ВКонтакте</a>
