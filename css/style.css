@@ -1,17 +1,19 @@
 :root{
-    --clrhd: #EEEEEE;
-    --clrfnt: #000000;
-    --clrtxt: #283136;
-    --clrbtn: #FFFFFF;
-    --txtfnt: 'Roboto', sans-serif;
+    --colorhead: #EEEEEE;
+    --colorfont: #000000;
+    --colortext: #283136;
+    --clrbotton: #FFFFFF;
+    --fonttext: 'Roboto', "Arial", sans-serif;
 }
 body{
-    font-family: var(--txtfnt);
+    font-family: var(--fonttext);
     font-style: normal;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
 header{
-    background-color: var(--clrhd);
+    background-color: var(--colorhead);
 }
 h3{
     font-size: 24px;
@@ -19,5 +21,4 @@ h3{
 }
 p{
     font-size: 16px;
-    line-height: 24px;
 }
