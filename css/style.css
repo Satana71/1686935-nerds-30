@@ -2,19 +2,107 @@
     --colorhead: #EEEEEE;
     --colorfont: #000000;
     --colortext: #283136;
-    --clrbotton: #FFFFFF;
+    --colorbutton: #FFFFFF;
     --fonttext: 'Roboto', "Arial", sans-serif;
 }
-body{
+.page_body{
+    margin: 0;
+    padding: 0;
     font-family: var(--fonttext);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    color: var(--colortext);
 }
-header{
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.main_header{
     background-color: var(--colorhead);
 }
+
+
+
+/* шапка навигации */
+.main_navigation{
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--colortext);
+    background-color: transparent;
+}
+.navigation_list{
+    background-color: var(--colorhead);
+    list-style: none;
+}
+.navigation_list a{
+    color: var(--colorfont);
+}
+.navigation_list a:hover,
+.navigation_list a:focus
+.trash a:hover,
+.trash a:focus{
+    color: var(--colortext);
+}
+.trash{
+    background-color: var(--colorhead);
+    color: var(--colorfont);
+    list-style: none;
+}
+/* слайдер */
+.info_nerds{
+    line-height: 18px;
+    background-color: #fb565a;
+    color: var(--colorbutton);
+    list-style: none;
+}
+
+/* карточки */
+.features_list{
+    list-style: none;
+}
+.features_item{
+    text-align: center;
+}
+.features_item h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+.features_item a{
+    font-size: 16px;
+    line-height: 18px;
+}
+.button_web{
+    background-color: #fb565a;
+    color: var(--colorbutton);
+}
+.button_app{
+    background-color: #00ca74;
+    color: var(--colorbutton);
+}
+.button_presentation{
+    background-color: #EFC849;
+    color: var(--colorbutton);
+}
+
+/* сброс стилей ul */
+
+.skills_list{
+    list-style: none;
+}
+.firm_list{
+    list-style: none;
+}
+.footer_social{
+    list-style: none;
+}
+
+
+
 h3{
     font-size: 24px;
     line-height: 30px; 
