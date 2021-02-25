@@ -4,69 +4,70 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
+  <body class="page_body inner_page">
+    <header class="main_header">
+      <nav class="main_navugation">
+        <a href="index.html" class="main_header_logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип нердс">
         </a>
         <ul class="navigation_list">
-          <li class="item_pagination"><a href="blank.html">Студия</a></li>
-          <li class="item_pagination"><a href="blank.html">Клиенты</a></li>
-          <li class="item_pagination"><a href="catalog.html">Магазин</a></li>
-          <li class="item_pagination"><a href="blank.html">Контакты</a></li>
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
         </ul>
-        <a href="blank.html">Корзина</a>
+        <a href="blank.html" class="trash">Корзина</a>
       </nav>
     </header>
-    <main>
-      <section class="">
+    <main class="container">
+      <h1 class="page_title">магазин готовых шаблонов</h1>
+      <section class="filtration">
         <h2>Фильтр выборки товара</h2>
-        <form action="">
+        <form action="filter">
           <fieldset>
             <legend>Стоимость</legend>
-              <ul>
-                <li>
-                  <input type="radio" name="product-group" value="adaptive" id="filter-adaptive">
-                  <label for="filter-adaptive">Адаптивная</label>
+              <ul class="filter_option">
+                <li class="filter_checkbox">
+                  <input class="filter_input_checkbox filter_input" type="radio" name="product-group" value="adaptive" id="_">
+                  <label for="filter_adaptive">Адаптивная</label>
                 </li>
-                <li>
-                  <input type="radio" name="product-group" value="fixed" id="filter-fixed" checked>
-                  <label for="filter-fixed">Фиксированная</label>
+                <li class="filter_checkbox">
+                  <input class="filter_input_checkbox filter_input" type="radio" name="product-group" value="fixed" id="filter-fixed" checked>
+                  <label for="filter_fixed">Фиксированная</label>
                 </li>
-                <li>
-                  <input type="radio" name="product-group" value="name" id="filter-name">
-                  <label for="filter-name">Резиновая</label>
+                <li class="filter_checkbox">
+                  <input class="filter_input_checkbox filter_input" type="radio" name="product-group" value="name" id="filter-name">
+                  <label for="filter_name">Резиновая</label>
                 </li>
               </ul>
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
-            <ul>
+            <ul class="filter_option">
               <li>
-                <input type="checkbox" name="slider" id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label>
+                <input type="checkbox" name="slider" id="filter_slider" checked>
+                <label for="filter_slider">Слайдер</label>
               </li>
               <li>
-                <input type="checkbox" name="advantages" id="filter-advantages">
-                <label for="filter-advantages">Блок преимуществ</label>
+                <input type="checkbox" name="advantages" id="filter_advantages">
+                <label for="filter_advantages">Блок преимуществ</label>
               </li>
               <li>
-                <input type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-news">Новости</label>
+                <input type="checkbox" name="news" id="filter_news" checked>
+                <label for="filter_news">Новости</label>
               </li>
               <li>
-                <input type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
+                <input type="checkbox" name="gallery" id="filter_gallery">
+                <label for="filter_gallery">Галерея</label>
               </li>
               <li>
-                <input type="checkbox" name="basket" id="filter-basket">
-                <label for="filter-basket">Корзина</label>
+                <input type="checkbox" name="basket" id="filter_basket">
+                <label for="filter_basket">Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -75,7 +76,7 @@
     </section>
     <section>
       <h2>Сортировка</h2>
-        <ul>
+        <ul class="filter_price">
           <li>
             <a href="blank.html">по цене</a>
           </li>
@@ -87,102 +88,102 @@
           </li>
         </ul>
     </section>
-    <section>
+    <section class="catalog">
       <h2>Карточки товаров</h2>
-        <article>
+        <article class="catalog_item">
           <img src="img/sedona.png" width="359" height="578" alt="Туристический сайт">
           <div>
             <h3>
-              <a href="blank.html">Sedona</a>
+              <a class="productname" href="blank.html">Sedona</a>
             </h3>
             <p>
               Информационный сайт
               для туристов
             </p>        
-            <a href="blank.html">9 900 ₽</a>
+            <a class="productprice" href="blank.html">9 900 ₽</a>
           </div>
         </article>
-        <article>
+        <article class="catalog_item">
           <img src="img/pinkapp.png" width="359" height="578" alt="Приложения для платформ">
           <div>
             <h3>
-              <a href="blank.html">Pink App</a>
+              <a class="productname" href="blank.html">Pink App</a>
             </h3>
             <p>
              Продуктовый лендинг приложения iOS и Android copy
             </p>        
-            <a href="blank.html">9 900 ₽</a>
+            <a class="productprice" href="blank.html">9 900 ₽</a>
           </div>
         </article>
-        <article>
+        <article class="catalog_item">
           <img src="img/barbershop.png" width="359" height="578" alt="Салон Красоты для мужчин">
           <div>
             <h3>
-              <a href="blank.html">Barbershop</a>
+              <a class="productname" href="blank.html">Barbershop</a>
             </h3>
             <p>
               Сайт салона красоты. Для мужчин, да.
             </p>        
-            <a href="blank.html">9 900 ₽</a>
+            <a class="productprice" href="blank.html">9 900 ₽</a>
           </div>
         </article>
-        <article>
+        <article class="catalog_item">
           <img src="img/mishka.png" width="359" height="578" alt="Вязаные игрушки">
           <div>
             <h3>
-              <a href="blank.html">Mishka</a>
+              <a class="productname" href="blank.html">Mishka</a>
             </h3>
             <p>
               Интернет магазин вязаных игрушек
             </p>        
-            <a href="blank.html">9 900 ₽</a>
+            <a class="productprice" href="blank.html">9 900 ₽</a>
           </div>
         </article>
-        <article>
+        <article class="catalog_item">
           <img src="img/aplus.png" width="359" height="578" alt="Курсы повышения квалификации">
           <div>
             <h3>
-              <a href="blank.html">A Plus</a>
+              <a class="productname" href="blank.html">A Plus</a>
             </h3>
             <p>
               Лендинг курсов повышения квалификации
             </p>        
-            <a href="blank.html">9 900 ₽</a>
+            <a class="productprice" href="blank.html">9 900 ₽</a>
           </div>
         </article>
-        <article>
+        <article class="catalog_item">
           <img src="img/kvas.png" width="359" height="578" alt="Крафтовый квас">
           <div>
             <h3>
-              <a href="blank.html">КВАС</a>
+              <a class="productname" href="blank.html">КВАС</a>
             </h3>
             <p>
               Промо-сайт производителя крафтового кваса
             </p>        
-            <a href="blank.html">9 900 ₽</a>
+            <a class="productprice" href="blank.html">9 900 ₽</a>
           </div>
         </article>
-      <ul>
-        <li><a href="blank.html">1</a></li>
-        <li><a href="blank.html">2</a></li>
-        <li><a href="blank.html">3</a></li>
-        <li><a href="blank.html">Следующая</a></li>
+      <ul class="navigation_product">
+        <li><a class="navigation_page" href="blank.html">1</a></li>
+        <li><a class="navigation_page" href="blank.html">2</a></li>
+        <li><a class="navigation_page" href="blank.html">3</a></li>
+        <li><a class="navigation_page" href="blank.html">Следующая</a></li>
       </ul>
     </section>
     </main>
     <footer>
       <section>
         <h2>Сопособы связи с нами</h2>
-        <ul>
-          <li>
+        <ul class="footer_social">
+          <li class="social_icon">
             <img src="img/vk-icon.svg" alt="Вконтакте">
             <a href="blank.html">ВКонтакте</a>
           </li>
-          <li>
+          <li class="social_icon">
             <img src="img/fb-icon.svg" alt="фейсбук">
             <a href="blank.html">Фейсбук</a>
           </li>
-          <li>
+          <li class="social_icon">
             <img src="img/insta-icon.svg" alt="инстаграм">
             <a href="blank.html">Инстаграм</a>
           </li>
