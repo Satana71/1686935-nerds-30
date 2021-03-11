@@ -33,16 +33,15 @@
     width: 1160px;
     margin: 0 auto;
     padding: 0 10px;
-    margin-bottom: 80px;
 }
 .main_header{
     display: grid;
     background-color: var(--colorhead);
     margin-bottom: 70px;
-    outline-offset: -5px; 
 }
 .main_header_logo{
-    justify-self: left;
+    /* width: 30%; */
+    margin-bottom: 60px;
 }
 a{
     text-decoration: none;
@@ -55,15 +54,16 @@ img{
 
 /* шапка навигации и логотип */
 .main_navigation{
+    margin: 0 auto;
+    width: 1160px;
     font-size: 16px;
     line-height: 30px;
     color: var(--colortext);
     background-color: transparent;
-    display: grid;
-    grid-template-columns: 1fr min-content;
-    width: 1160px;
-    margin: 0 auto;
-    padding: 0 10px;
+    /* display: grid;
+    grid-template-columns: 1fr min-content; */
+    display: flex;
+    align-items: center;
 }
 .main_header_bar{
     background-color: var(--basic-black);
@@ -73,6 +73,10 @@ img{
     padding: 0;
     background-color: var(--colorhead);
     list-style: none;
+    width: 50%;
+    /* margin-bottom: 60px; */
+    display: flex;
+    justify-content: space-around;
 }
 .navigation_list a{
     color: var(--colorfont);
@@ -83,10 +87,14 @@ img{
 .trash a:focus{
     color: var(--colortext);
 }
+.trash_section .trash{
+    padding-left: 50px;
+}
 .trash{
     background-color: var(--colorhead);
     color: var(--colorfont);
     list-style: none;
+    max-width: 140px;
 }
 /* подвал */
 .footer_social{
@@ -99,6 +107,15 @@ img{
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.friend_social h2{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.friend_social p{
+    font-size: 16px;
+    line-height: 22px;
 }
 /* иконки соц сетей */
 .social{
@@ -118,6 +135,9 @@ img{
 
 /* главная страница */
 /* слайдер главной страницы */
+.slider{
+    margin-bottom: 80px;
+}
 .info_nerds{
     line-height: 18px;
     background-color: #fb565a;
@@ -125,6 +145,9 @@ img{
     list-style: none;
 }
 /* карточки главной страницы */
+.features{
+    margin-bottom: 80px;
+}
 .features_list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -134,7 +157,8 @@ img{
     list-style: none;
 }
 .features_item{
-    text-align: center;
+    width: 300px;
+    text-align: start;
 }
 .features_item h3{
     font-size: 24px;
@@ -144,9 +168,7 @@ img{
     font-size: 16px;
     line-height: 18px;
 }
-.features_item p{
-    margin: 0 10px;
-}
+
 /* кнопки карточек главной страницы */
 .button_web{
     background-color: #fb565a;
@@ -166,11 +188,53 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.article_info{
+    width: 700px;
+    text-align: start;
+}
+.article_slogan{
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 29px;
+}
+.article_meta{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    font-variant: small-caps
+}
+.article_content{
+    font-size: 16px;
+}
+.article_statistic{
+    width: 460px;
+    text-align: center;
+}
+.slogan_nerds{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    font-variant: small-caps
+}
 .skills_list{
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+.skills_item{
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: bold;
+}
+.skills_item p{
+    font-size: 16px;
+    line-height: 18px;  
+    font-weight: normal;
+    color: var(--colortext);
+}
+
 /* фирмы заказавшие услуги */
 .firm_list{
     list-style: none;
