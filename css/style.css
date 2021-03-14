@@ -37,7 +37,8 @@
 .main_header{
     display: grid;
     background-color: var(--colorhead);
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
+    height: 180px;
 }
 .main_header_logo{
     /* width: 30%; */
@@ -245,6 +246,17 @@ img{
 
 
 /* страница товара */
+.page_title{
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    display: grid;
+    justify-content: center;
+    outline: 5px solid rgba(0, 0, 255, 0.7);
+    margin-top: 0;
+    background-color: var(--colorhead);
+    height: 180px;
+}
 .allcontent_product{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -253,6 +265,9 @@ img{
 /* фильтр товаров */
 form{
     width: 260px;
+}
+fieldset{
+    border: none;
 }
 .filter legend{
     font-size: 18px;
@@ -274,11 +289,23 @@ form{
 }
 
 /* хлебные крошки фильтра */
+.sorting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .filter_price{
     list-style: none;
     color: var(--colorfont);
     outline: 5px solid green;
 }
+.filter_price ul{
+    display: flex;
+    justify-content: space-around;
+}
+/* .filter_price li{
+    margin-right: 20px;
+} */
 .filter_price a{
     list-style: none;
     color: var(--colorfont);
@@ -294,6 +321,13 @@ form{
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
+}
+.card_name{
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 .catalog_item{
     width: 358px;
