@@ -29,9 +29,19 @@
       </div>
     </header>
     <main class="container">
-      <div class="slider">
-        <h1>Долго, дорого, скрупулезно.</h1>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+      <div class="slider slider_one">
+        <h1>Долго, дорого,<br> скрупулезно.</h1>
+        <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+        <a class="info_nerds" href="blank.html">узнать больше</a>
+      </div>
+      <div class="slider slider_two">
+        <h1>Любим математику<br>как никто другой</h1>
+        <p>Никакого креатива, только математические форумы<br> для расчета идеальных пропорций</p>
+        <a class="info_nerds" href="blank.html">узнать больше</a>
+      </div>
+      <div class="slider slider_three">
+        <h1>Только ночь,<br>только хардкор</h1>
+        <p>Работать днем, как все? Мы против этого,<br> Ближе к полуночи работа только начинается.</p>
         <a class="info_nerds" href="blank.html">узнать больше</a>
       </div>
       <section class="features">
@@ -139,5 +149,23 @@
         <p>Скидка 10% для друзей из социальных сетей</p>
       </div>
     </footer>
+    <section class="popup">
+      <h2>Наишите нам</h2>
+      <form class="popup_form" action="send" method="post">
+        <p class="popup_item">
+          <label for="popup_name">Ваше имя</label>
+          <input id="popup_name" type="name" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="popup_item">
+          <label for="popup_email">Ваш email:</label>
+          <input id="popup_email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p class="popup_item">
+          <label for="popup_post">Текст письма:</label>
+          <input id="popup_post" type="textpost" name="textpost" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
